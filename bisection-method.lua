@@ -1,0 +1,24 @@
+-- function f(x) {
+-- 	return x^3 + x - 1	#Change depending on the specific function
+-- }
+-- a = 0				#Change depending on the interval
+-- b = 1				#Change depending on the interval
+-- tol = 0.005			#Change depending on the tolerance desired
+
+-- f_a = f(a)			#Might replace with f(c)
+-- f_b = f(b)			#Might replace with f(c)
+-- while ((b-a)/2 > tol) {		#Stop if the interval length/2 is within tolerance
+-- 	c = (a + b)/2		#Calculate midpoint
+-- 	f_c = f(c)
+-- 	if (f_c == 0) {		#If the midpoint is the root, we're done.
+-- 		break
+-- 	}
+-- 	if (f_a*f_c < 0) {	#If f(c) is the opposite sign of f(a)
+-- 		b = c		#then make c the new righthand endpoint
+-- 		f_b = f_c
+-- 	} else {
+-- 		a = c		#otherwise, make c the new lefthand endpoint
+-- 		f_a = f_c
+-- 	}
+-- }
+-- print((a + b)/2)		#Calculate and print the final root estimate
